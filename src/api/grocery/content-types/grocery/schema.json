@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groceries",
+  "info": {
+    "singularName": "grocery",
+    "pluralName": "groceries",
+    "displayName": "Grocery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grocery.grocery"
+    }
+  }
+}
